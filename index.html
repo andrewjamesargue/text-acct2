@@ -59,7 +59,7 @@
 						<h2>Text mining has many names </h2>
 						<br>
 						<ul>
-							<li>Knowledge discovery from text (KDT)</li>
+							<li>Knowledge Discovery from Text</li>
 							<li>Intelligent Text Analysis</li>
 							<li>Text Data Mining</li>
 							<li>Natural Language Processing</li>
@@ -72,7 +72,7 @@
 					</section>
 
 					<section>
-						<h2>What it entails</h2>
+						<h2>Steps 1-4</h2>
 						<img src="images/mining_process.png" width="85%">
 					</section>		
 
@@ -80,25 +80,26 @@
 						<h2>Outline</h2>
 						<br>
 						<ol>
+							<li>Introduction</li>
 							<li>Preprocessing</li>
 							<ul>
 								<li>Tokenization</li>
 								<li>Filtering</li>
-								<li>Lemmatization or stemming</li>
+								<li>Lemmatization</li>
+								<li>Stemming</li>
 							</ul>
 							<li>Transformation approaches</li>
 							<ul>
 								<li>Bag of words </li>
 								<li>Approaches</li>
 							</ul>
-							<li>Analysis techniques</li>
+							<li>Analysis techniques and applications</li>
 							<ul>
 								<li>Classification</li>
 								<li>Clustering</li>
 								<li>Information extraction</li>
 								<li>Text evaluation</li>
 							</ul>
-							<li>Applications</li>
 						</ol>
 					</section>
 				</section>
@@ -114,8 +115,9 @@
 						<h2>Tokenization</h2>
 						<br>
 						<ul>
-							<li>Segment a text into units or "tokens" of pre-determined length</li>
+							<li>Segment a text into "tokens"</li>
 							<ul>
+								<li>Units of pre-determined length</li>
 								<li>Word pieces</li>
 								<li>Sentences</li>
 								<li>Paragraphs</li>
@@ -287,6 +289,35 @@
 						<img src="images/liwc.png" width="45%" style="filter: contrast(80%);">
 					</section>
 
+					<section>
+
+						<h2>Prediction of performance</h2>
+						<ul>
+							<li>Positive, negative or neutral tone of management communications can reveal management’s predictions of future performance</li>
+
+							<li>Positive word connotations in earnings press releases and earnings conference calls has been linked to:
+
+								<ul>
+									<li>Higher ROA</li>
+									<li>Higher short-term stock returns</li>
+									<li>greater future operational performance</li>
+								</ul>
+							</li>
+						
+
+							<li>Negative tone in media coverage has been linked to:
+
+								<ul>
+									<li>lower stock returns</li>
+									<li>lower earnings</li>
+									<li>higher stock market volatility</li>
+									<li>higher stock market volatility</li>
+								</ul>
+							</li>
+
+						</ul>
+					</section>
+
 				</section>
 
 				<section>
@@ -339,6 +370,25 @@
 						</ul>
 					</section>
 
+					<section>
+						<h2>Fraud detection</h2>
+						<ul>
+							<li>Cosine similarity metric can be used to define ‘abnormal disclosure’ as the deviation between the MD&A word distribution vector and the average word usage vector of non-fraudulent industry peers</li>
+
+							<li>You can track the evolution of similarity  of a company’s year-to-year annual reports
+
+
+								<ul>
+									<li>Can expose an incongruity in its reporting activities in a particular period of time</li>
+									<li>Incongruity might in turn be attributable to fraudulent activities </li>
+								</ul>
+							</li>
+
+						<li>A ‘Fraud Similarity Score’ can uncover fraud cases by calculating the cosine similarity between a firm’s abnormal disclosure and the average abnormal disclosure vector of firms previously involved in SEC AAER enforcement actions
+						</li>
+						</ul>
+					</section>
+
 				</section>
 
 				<section>
@@ -366,6 +416,28 @@
 							</li>
 						</ul>
 					</section>
+
+					<section>
+						<h2>Accounting application:</h2>
+						<h2>Risk and going-concern assessment</h2>
+						<ul>
+							<li>Depending on the wording they choose, a company’s management could inadvertently reveal the company’s risk profile</li>
+							<li>Calculating the number of appearances of words expressing risk or uncertainty (e.g. ‘risk’, ‘risky’, ‘uncertain’) could assesses anticipated risk</li>
+							<li>Certain words and expressions in an annual report could indicate whether a company is at risk of going bankrupt
+								<ul>
+									<li>‘to our regret’ or ‘does not allow’ appearing in the same section as ‘dividend’ could indicate high probability of failure </li>
+									<li>Frequent co-occurrences of expressions such as ‘research and development’ and ‘dividend’ are indicative of corporate continuity</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section>
+					<h5 style="text-align: right;">Text evaluation</h5>
+					
+					<section data-menu-title="Information extraction & Text evaluation" data-autoplay="true" data-background-video="videos/references.mp4" data-background-video-loop="loop" data-background-video-muted="true"></section>
 
 
 					<section>
@@ -403,6 +475,24 @@
 						</ul>
 					</section>
 
+					<section>
+						<h2>Fraud detection</h2>
+						<ul>
+							<li>Examining content-related features of annual reports can be applied to fraud detection</li>
+
+							<li>You can identify early and advanced stages of fraud using certain simple surface, or deeper linguistic features
+
+								<ul>
+									<li>Percentage of sentences in active vs. passive voice </li>
+									<li>Readability index </li>
+									<li>Standard deviation of sentence length </li>
+								</ul>
+							</li>
+
+						<li>Perhaps fraudulent managers tend to write more often in passive voice, in order to dissociate themselves from the ongoing situation</li>
+						</ul>
+					</section>
+
 
 					<section>
 						<h2>Readability Measures</h2>
@@ -424,6 +514,30 @@
 							</li>
 						</ul>
 					</section>
+
+					<section>
+						<h2>Accounting application:</h2>
+						<h2>Increase user-friendliness</h2>
+						<ul>
+							<li>Accounting documentation and annual reports include additional disclosures that are becoming progressively more extensive and complex</li>
+
+							<li>User-friendliness and accessibility of the information in accounting text documents could equally be increased through certain textual aspects
+
+
+
+								<ul>
+									<li>Summarization</li>
+									<li>Topic detection</li>
+									<li>Automatic information extraction</li>
+									<li>Integrate complementary qualitative and quantitative information</li>
+								</ul>
+							</li>
+
+						<li>Quality of corporate communication impacts on the speed and effectiveness of investors’ decision-making so it may improve future stock returns and earnings</li>
+						</ul>
+					</section>
+
+				</section>
 
 				</section>
 
