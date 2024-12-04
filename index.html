@@ -39,11 +39,37 @@
 				<section>
 					<section data-menu-title="Title" data-autoplay="true" data-background-video="videos/drone.mp4" data-background-video-loop="loop" data-background-video-muted="true">
 						<h2>Text Mining in Accounting</h2>
-						<h4>NSYSU Fall 2024
-						</h4>
+						<h4>NSYSU | IB521 | Fall 2024</h4>
 						<br>
 						<br>
-						<p>Dr. Wil Martens</p>
+						<p></p>
+					</section>
+
+					<section>
+						<h2>Outline</h2>
+						<br>
+						<ol>
+							<li>Introduction to Text Mining</li>
+							<li>Preprocessing Textual Data</li>
+							<ul>
+								<li>Tokenization</li>
+								<li>Filtering</li>
+								<li>Lemmatization</li>
+								<li>Stemming</li>
+							</ul>
+							<li>Transformation approaches</li>
+							<ul>
+								<li>Bag of words </li>
+								<li>Approaches</li>
+							</ul>
+							<li>Analysis techniques and applications</li>
+							<ul>
+								<li>Classification</li>
+								<li>Clustering</li>
+								<li>Information extraction</li>
+								<li>Text evaluation</li>
+							</ul>
+						</ol>
 					</section>
 
 				</section>
@@ -67,7 +93,7 @@
 					</section>
 
 					<section>
-						<h2>"AI"</h2>
+						<h2>What does "AI" refer to?</h2>
 						<img src="images/ai_venn.png" width="85%">
 					</section>
 
@@ -77,31 +103,44 @@
 					</section>		
 
 					<section>
-						<h2>Outline</h2>
+						<h2>Example: 10-K</h2>
 						<br>
-						<ol>
-							<li>Introduction</li>
-							<li>Preprocessing</li>
+						<ul>
+							<li>A report filed once per fiscal year with the SEC</li>
+							<li>Describes company's financial situation and circumstances</li>
+							<li>Sections with text:</li>
 							<ul>
-								<li>Tokenization</li>
-								<li>Filtering</li>
-								<li>Lemmatization</li>
-								<li>Stemming</li>
+								<li>Item 1 - Business</li>
+								<li>Item 1A - Risk Factors</li>
+								<li>Item 7 - Management Discussion & Analysis</li>
+								<li>Item 8 - Notes of Financial Statements</li>
 							</ul>
-							<li>Transformation approaches</li>
-							<ul>
-								<li>Bag of words </li>
-								<li>Approaches</li>
-							</ul>
-							<li>Analysis techniques and applications</li>
-							<ul>
-								<li>Classification</li>
-								<li>Clustering</li>
-								<li>Information extraction</li>
-								<li>Text evaluation</li>
-							</ul>
-						</ol>
+						</ul>
+						<p><a href="https://investor.apple.com/sec-filings/default.aspx">For example</a></p>
+						
 					</section>
+
+					<section>
+						<h2>Other Sources</h2>
+						<br>
+						<ul>
+							<li>8-K A report filed to to announce major events that shareholders should know about</li>
+							<li><a href="https://www.sec.gov/data-research/financial-statement-notes-data-sets">SEC EDGAR Database</a></li>
+							<li><a href="https://investor.apple.com/investor-relations/default.aspx">Press Releases</a></li>
+							<li><a href="https://www.fool.com/earnings-call-transcripts/">Earnings conference call transcripts</a></li>
+							<ul>
+								<li><a href="https://www.fool.com/earnings-call-transcripts/">Motley Fool</a></li>
+								<li><a href="https://seekingalpha.com">Seeking Alpha</a></li>
+								<li><a href="https://earningscast.com">earningscast.com</a></li>
+							</ul>
+							<li><a href="https://github.com/GeminiLn/EarningsCall_Dataset">Research paper repositories</a></li>
+							<li><a href="https://www.morningstar.com/company-reports">Analysts' reports</a></li>
+							<li><a href="https://pitchbook.com/profiles/company/518185-81#overview">Other company databases</a></li>
+
+						</ul>
+					</section>
+	
+
 				</section>
 
 				<section>
@@ -216,16 +255,16 @@
 				</section>
 
 				<section>
-					<h5 style="text-align: right;">Classification</h5>
+					<h5 style="text-align: right;">Method #1: Classification</h5>
 					
-					<section data-menu-title="Classification" data-autoplay="true" data-background-video="videos/surfing.mp4" data-background-video-loop="loop" data-background-video-muted="true"></section>
+					<section data-menu-title="Method #1: Classification" data-autoplay="true" data-background-video="videos/surfing.mp4" data-background-video-loop="loop" data-background-video-muted="true"></section>
 
 					<section>
 						<h2>Classification</h2>
 						<ul>
 							<li>AKA 'categorization'</li>
 							<li>Uses labeled data to train model</li>
-							<li>The model learns to assign labels (classes) to new text fragments</li>
+							<li>A model learns to assign labels (classes) to new text fragments</li>
 							<li>Subcategories:
 								<ul>
 									<li>Topic classification</li>
@@ -318,12 +357,20 @@
 						</ul>
 					</section>
 
+					<section>
+						<h2>Example paper</h2>
+						<p><img src="images/tar-sentiment.png" width="45%" style="filter: contrast(80%);"></p>
+						<p><img src="images/tar-sentiment2.png" width="45%" style="filter: contrast(80%);"></p>
+						<a href="andrewjamesargue.github.io/text-acct2/tar-article-sentiment.pdf" target="_blank">View article</a>
+					</section>
+
+
 				</section>
 
 				<section>
-					<h5 style="text-align: right;">Clustering</h5>
+					<h5 style="text-align: right;">Method #2: Clustering</h5>
 					
-					<section data-menu-title="Clustering" data-autoplay="true" data-background-video="videos/waves.mp4" data-background-video-loop="loop" data-background-video-muted="true"></section>
+					<section data-menu-title="Method #2: Clustering" data-autoplay="true" data-background-video="videos/waves.mp4" data-background-video-loop="loop" data-background-video-muted="true"></section>
 
 
 					<section>
@@ -339,14 +386,6 @@
 								</ul>
 							</li>
 						</ul>
-					</section>
-
-					<section>
-						<h2>Similarity Measures</h2>
-						<img src="images/cosine-similarity.jpg" width="35%" style="filter: contrast(80%);">
-						<li>Cosine similarity is the cosine of the angle between two document vector representations of text documents</li>
-						<img src="images/jaccard-similarity.jpg" width="55%" style="filter: contrast(80%);">
-						<li>Jaccard Similarity is a measure of similarity between two asymmetric binary vectors or we can say a way to find the similarity between two sets</li>
 					</section>
 
 					<section>
@@ -389,17 +428,45 @@
 						</ul>
 					</section>
 
+					<section>
+						<h2>Example paper</h2>
+						<p><img src="images/jae-lda.png" width="45%" style="filter: contrast(80%);"> </p>
+						<p><img src="images/jae-lda2.jpg" width="45%" style="filter: contrast(80%);"></p>
+						<a href="andrewjamesargue.github.io/text-acct2/jae-lda-article.pdf" target="_blank">View article</a>
+					</section>
+
+
+					<section>
+						<h2>Cosine Similarity</h2>
+						<img src="images/cosine-similarity.jpg" width="45%" style="filter: contrast(80%);">
+						<li>Cosine similarity is the cosine of the angle between two document vector representations of text documents</li>
+					</section>
+
+					<section>
+						<h2>Jaccard Similarity</h2>
+						<img src="images/jaccard-similarity.jpg" width="85%" style="filter: contrast(80%);">
+						<li>Jaccard Similarity is a measure of similarity between two asymmetric binary vectors or we can say a way to find the similarity between two sets</li>
+					</section>
+
+					<section>
+						<h2>Example Study</h2>
+						<p><img src="images/jae-article.png" width="45%" style="filter: contrast(80%);"></p>
+						<p><img src="images/jae-article2.png" width="95%" style="filter: contrast(80%);"></p>
+						<a href="andrewjamesargue.github.io/text-acct2/jae-article-2015.pdf" target="_blank">View article</a>
+					</section>
+
 				</section>
 
+
 				<section>
-					<h5 style="text-align: right;">Information extraction & Text evaluation</h5>
+					<h5 style="text-align: right;">Information extraction</h5>
 					
-					<section data-menu-title="Information extraction & Text evaluation" data-autoplay="true" data-background-video="videos/references.mp4" data-background-video-loop="loop" data-background-video-muted="true"></section>
+					<section data-menu-title="Information extraction" data-autoplay="true" data-background-video="videos/references.mp4" data-background-video-loop="loop" data-background-video-muted="true"></section>
 
 					<section>
 						<h2>Information extraction</h2>
 						<ul>
-							<li>When you provide a pre-defined list of words or expressions of interest</li>
+							<li>you provide a pre-defined list of words or expressions of interest</li>
 							<li>Like a 'targeted search' for the predefined list and highly related words or phrases can be identified in a set of text corpora</li>
 							<li>Terms related to certain types of risk
 								<ul>
@@ -418,18 +485,10 @@
 					</section>
 
 					<section>
-						<h2>Accounting application:</h2>
-						<h2>Risk and going-concern assessment</h2>
-						<ul>
-							<li>Depending on the wording they choose, a company’s management could inadvertently reveal the company’s risk profile</li>
-							<li>Calculating the number of appearances of words expressing risk or uncertainty (e.g. ‘risk’, ‘risky’, ‘uncertain’) could assesses anticipated risk</li>
-							<li>Certain words and expressions in an annual report could indicate whether a company is at risk of going bankrupt
-								<ul>
-									<li>‘to our regret’ or ‘does not allow’ appearing in the same section as ‘dividend’ could indicate high probability of failure </li>
-									<li>Frequent co-occurrences of expressions such as ‘research and development’ and ‘dividend’ are indicative of corporate continuity</li>
-								</ul>
-							</li>
-						</ul>
+						<h2>Example Study</h2>
+						<p><img src="images/tar-article.png" width="45%" style="filter: contrast(80%);"></p>
+						<p><img src="images/tar-article2.png" width="95%" style="filter: contrast(80%);"></p>
+						<a href="andrewjamesargue.github.io/text-acct2/tar-article-2024.pdf" target="_blank">View article</a>
 					</section>
 
 				</section>
@@ -437,7 +496,7 @@
 				<section>
 					<h5 style="text-align: right;">Text evaluation</h5>
 					
-					<section data-menu-title="Information extraction & Text evaluation" data-autoplay="true" data-background-video="videos/references.mp4" data-background-video-loop="loop" data-background-video-muted="true"></section>
+					<section data-menu-title="Text evaluation" data-autoplay="true" data-background-video="videos/references.mp4" data-background-video-loop="loop" data-background-video-muted="true"></section>
 
 
 					<section>
@@ -516,6 +575,12 @@
 					</section>
 
 					<section>
+						<h2>Example Study</h2>
+						<p><img src="images/jae-article.png" width="45%" style="filter: contrast(80%);"></p>
+						<p><img src="images/jae-article-fog.png" width="95%" style="filter: contrast(80%);"></p>
+					</section>
+
+					<section>
 						<h2>Accounting application:</h2>
 						<h2>Increase user-friendliness</h2>
 						<ul>
@@ -541,138 +606,7 @@
 
 				</section>
 
-				<section>
-					<h5 style="text-align: right;">Applications</h5>
-					
-					<section data-menu-title="Applications" data-autoplay="true" data-background-video="videos/magnify.mp4" data-background-video-loop="loop" data-background-video-muted="true"></section>
-					
-					<section>
-						<h2>Accounting Applications</h2>
-						<ul>
-							<li>Risk and going-concern assessment</li>
-							<li>Fraud detection</li>
-							<li>Increase of user-friendliness accounting documentation</li>
-							<li>Prediction of future performance</li>
-						</ul>
-					</section>
 
-					<section>
-						<h2>Risk and going-concern assessment</h2>
-						<ul>
-							<li>Depending on the wording they choose, a company’s management could inadvertently reveal the company’s risk profile</li>
-							<li>Calculating the number of appearances of words expressing risk or uncertainty (e.g. ‘risk’, ‘risky’, ‘uncertain’) could assesses anticipated risk</li>
-							<li>Certain words and expressions in an annual report could indicate whether a company is at risk of going bankrupt
-								<ul>
-									<li>‘to our regret’ or ‘does not allow’ appearing in the same section as ‘dividend’ could indicate high probability of failure </li>
-									<li>Frequent co-occurrences of expressions such as ‘research and development’ and ‘dividend’ are indicative of corporate continuity</li>
-								</ul>
-							</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>Fraud detection</h2>
-						<ul>
-							<li>Managers often unconsciously reveal information in reports through language commonly associated with obfuscation and impression management 
-								<ul>
-									<li>Mechanism could be seen as an attempt to distract the reader from the financial results or the ploys used to stage the results</li>
-								</ul>
-							</li>
-
-							<li>Mechanism could be seen as an attempt to distract the reader from the financial results or the ploys used to stage the results
-								<ul>
-									<li>Higher, more persistent earnings positively correlated with the readability of the financial reports</li>
-								</ul>
-							</li>
-						<li>Managers that frequently obscure their writing predictive of poor performance or earnings</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>Fraud detection</h2>
-						<ul>
-							<li>Examining content-related features of annual reports can be applied to fraud detection</li>
-
-							<li>You can identify early and advanced stages of fraud using certain simple surface, or deeper linguistic features
-
-								<ul>
-									<li>Percentage of sentences in active vs. passive voice </li>
-									<li>Readability index </li>
-									<li>Standard deviation of sentence length </li>
-								</ul>
-							</li>
-
-						<li>Perhaps fraudulent managers tend to write more often in passive voice, in order to dissociate themselves from the ongoing situation</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>Fraud detection</h2>
-						<ul>
-							<li>Cosine similarity metric can be used to define ‘abnormal disclosure’ as the deviation between the MD&A word distribution vector and the average word usage vector of non-fraudulent industry peers</li>
-
-							<li>You can track the evolution of similarity  of a company’s year-to-year annual reports
-
-
-								<ul>
-									<li>Can expose an incongruity in its reporting activities in a particular period of time</li>
-									<li>Incongruity might in turn be attributable to fraudulent activities </li>
-								</ul>
-							</li>
-
-						<li>A ‘Fraud Similarity Score’ can uncover fraud cases by calculating the cosine similarity between a firm’s abnormal disclosure and the average abnormal disclosure vector of firms previously involved in SEC AAER enforcement actions
-						</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>Increase user-friendliness</h2>
-						<ul>
-							<li>Accounting documentation and annual reports include additional disclosures that are becoming progressively more extensive and complex</li>
-
-							<li>User-friendliness and accessibility of the information in accounting text documents could equally be increased through certain textual aspects
-
-
-
-								<ul>
-									<li>Summarization</li>
-									<li>Topic detection</li>
-									<li>Automatic information extraction</li>
-									<li>Integrate complementary qualitative and quantitative information</li>
-								</ul>
-							</li>
-
-						<li>Quality of corporate communication impacts on the speed and effectiveness of investors’ decision-making so it may improve future stock returns and earnings</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>Prediction of performance</h2>
-						<ul>
-							<li>Positive, negative or neutral tone of management communications can reveal management’s predictions of future performance</li>
-
-							<li>Positive word connotations in earnings press releases and earnings conference calls has been linked to:
-
-								<ul>
-									<li>Higher ROA</li>
-									<li>Higher short-term stock returns</li>
-									<li>greater future operational performance</li>
-								</ul>
-							</li>
-						
-
-							<li>Negative tone in media coverage has been linked to:
-
-								<ul>
-									<li>lower stock returns</li>
-									<li>lower earnings</li>
-									<li>higher stock market volatility</li>
-									<li>higher stock market volatility</li>
-								</ul>
-							</li>
-
-						</ul>
-					</section>
 
 
 					<section>
